@@ -30,7 +30,7 @@ public class DecodeVinService {
       return Response.status(Response.Status.BAD_REQUEST).build();
     }
 
-    LOGGER.info("lookup vin: " + vin);
+    LOGGER.info("lookup VIN: " + vin);
     
     VehicleData vehicleData = decodeVin.decodeVin(vin);
 
