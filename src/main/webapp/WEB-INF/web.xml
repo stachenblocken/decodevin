@@ -12,8 +12,8 @@
     <server-name>postgresql</server-name>
     <port-number>5432</port-number>
     <database-name>sampledb</database-name>
-    <user>username</user>
-    <password>password</password>
+    <user>${env.POSTGRESQL_USERNAME}</user>
+    <password>${env.POSTGRESQL_PASSWORD}</password>
   </data-source>
 
 </web-app>
